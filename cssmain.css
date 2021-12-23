@@ -20,6 +20,59 @@
  .logo{
       float: left;
   } */
+
+  .background-ask-landing-layer1 {
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    z-index: 99;
+    width: 96%;
+}
+  .background-ask-landing-layer2 {
+    position: absolute;
+    bottom: -10%;
+    left: -100px;
+    z-index: 99;
+    width: 630px;
+    height: 844px;
+}
+.img-ask-landing{
+  position: relative;
+  z-index: 999;
+}
+  .bg-wind-landing{
+    background-image: url(assets/img/bg-wind.svg);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-position-x: left;
+  }
+  .rectangle-landing{
+    background-color: #2CD5C4;
+    width: 35px;
+    height: 35px;
+    transform: rotate(
+45deg);
+    position: absolute;
+  }
+  .rectangle-landing-syarat{
+    background-color: #2CD5C4;
+    width: 35px;
+    height: 35px;
+    transform: rotate( 
+45deg);
+    margin-bottom: 87px;
+    margin-left: 80%;
+  }
+  .rectangle-line-landing-syarat {
+    height: 329px;
+    width: 166px;
+    border-radius: 0px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
 .frame-header-landing{
   width: 530px;
   height: 340px;
@@ -28,6 +81,59 @@
   float: right;
   position: relative;
   z-index: 1;
+}
+.frame-why-landing{
+  border-radius: 193px;
+    overflow: hidden;
+    height: 100%;
+    width: 90%;
+    margin-right: 0px;
+    position: relative;
+  z-index: 99;
+}
+
+.frame-syarat-landing{
+  border-radius: 0px 150px 0px 200px;
+    overflow: hidden;
+    /* height: 100%; */
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 99;
+    box-shadow: 2px 8px 35px 1px rgba(0, 0, 0, 0.1);
+}
+
+.ornament-why-landing-layer1 {
+  border: 1px solid black;
+  border-radius: 193px;
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  left: 10%;
+  top: 2%;
+  z-index: 2;
+}
+
+.ornament-why-landing-layer2 {
+  border: 1px solid black;
+  border-radius: 193px;
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  left: 13%;
+  top: 4%;
+  z-index: 2;
+}
+.ornament-why-landing-layer3 {
+  border: 1px solid black;
+  border-radius: 193px;
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  left: 16%;
+  top: 6%;
+  z-index: 2;
 }
 .ornament-img-header{
   position: absolute;
@@ -114,7 +220,7 @@ right: -37px;
   }
 
   button.collapsible:after {
-    content: url(/assets/img/closearrow.svg);
+    content: url(assets/img/closearrow.svg);
     color: white;
     font-weight: bold;
     float: right;
@@ -125,7 +231,7 @@ right: -37px;
     height: 30px;
 }
 button.collapsible.activecoll:after {
-  content: url(/assets/img/openarrow.svg);
+  content: url(assets/img/openarrow.svg);
 }
   
   /* hamburger */
@@ -159,19 +265,19 @@ justify-content: space-between;
 }
 @font-face{
   font-family: 'OoredooHeavy';
-  src: url("/assets/font/Ooredoo-Heavy.woff2")format("woff");
+  src: url("assets/font/Ooredoo-Heavy.woff2")format("woff");
 }
 @font-face{
   font-family: 'OoredooBold';
-  src: url("/assets/font/ooredoo-Bold_gdi.woff")format("woff");
+  src: url("assets/font/ooredoo-Bold_gdi.woff")format("woff");
 }
 @font-face{
   font-family: 'OoredooRegular';
-  src: url("/assets/font/ooredoo-Regular_gdi.woff")format("woff");
+  src: url("assets/font/ooredoo-Regular_gdi.woff")format("woff");
 }
 @font-face{
   font-family: 'OoredooLight';
-  src: url("/assets/font/ooredoo-Light_gdi.woff")format("woff");
+  src: url("assets/font/ooredoo-Light_gdi.woff")format("woff");
 }
 
 h1 ,h2 ,h3 {
@@ -183,7 +289,7 @@ h4 ,h5 ,h6{
 
   p {
     letter-spacing: 0.005em;
-    font-family: 'OoredooLight';
+    font-family: 'OoredooRegular';
     /* line-height: 32px; */
   }
   .py-74{
@@ -215,7 +321,7 @@ h4 ,h5 ,h6{
     background-color: black !important;
   }
   .bg-main {
-    background-color: #091a18;
+    background-color: #2cd5c4;
   }
   .bg-main-sub {
     background-color: #b5ebe5;
@@ -277,14 +383,14 @@ h4 ,h5 ,h6{
   }
 
   .carousel-control-prev-icon {
-    background-image: url("/assets/img/arrowleft.svg") !important;
+    background-image: url("assets/img/arrowleft.svg") !important;
     width: 40px;
     height: 40px;
     justify-content: start !important;
   }
 
   .carousel-control-next-icon {
-    background-image: url("/assets/img/arrosright.svg") !important;
+    background-image: url("assets/img/arrosright.svg") !important;
     width: 40px;
     height: 40px;
     justify-content: end !important;
@@ -343,11 +449,11 @@ h4 ,h5 ,h6{
       border: 2px solid;
     transform: rotate( 
 90deg);
-    width: 130%;
+    width: 150%;
     position: relative;
     bottom: 0;
-    top: 70%;
-    right: 15%;
+    top: 80%;
+    right: 25%;
     }
     .linemill{
       padding-bottom: 130px;
@@ -358,10 +464,10 @@ h4 ,h5 ,h6{
     .iconmill{
       position: relative;
       z-index: 999;
+      opacity: 0.5;
     }
     .iconmill:hover{
-filter: invert(1);
-width: 50px;
+opacity: 1;
     }
 
   }
@@ -386,6 +492,11 @@ width: 50px;
     .p-berita{
       padding-top: 48px;
       padding-bottom: 48px;
+    }
+    .rectangle-line-landing-syarat {
+      width: 100.4px;
+      height: 102.17px;
+      top: 20%;
     }
   }
 
@@ -412,8 +523,33 @@ width: 50px;
         width: 24px;
         z-index: 999;
       }
+    .textarrow-footer{
+      font-size: 16px;
+    }
+    .rectangle-landing{
+      width: 12px;
+      height: 12px;
+    }
+    .img-why-landing{
+      width: 700px;
+      position: relative;
+      top: -120px;
+    }
+    .frame-why-landing {
+      height: 189px;
+    }
+    .img-syarat-landing{
+      width: 700px;
+      position: relative;
+      top: -120px;
+    }
+    .frame-syarat-landing{
+      width: 300px;
+height: 205.59px;
+      box-shadow: 2px 8px 35px 1px rgba(0, 0, 0, 0.1);
+border-radius: 0px 30px 0px 50px;
+    }
     
-  
   }
 
   @media screen and (min-width: 600px) {
@@ -421,8 +557,15 @@ width: 50px;
       max-width: 1300px !important;
       margin: auto;
     }
-    .topnav {
+    .container-nav {
       max-width: 1300px !important;
+      margin: auto;
+      padding-right: 24px;
+    padding-left: 24px;
+    }
+    .topnav {
+      box-shadow: 2px 10px 20px 5px rgba(0, 0, 0, 0.07);
+      /* max-width: 1300px !important; */
       margin: auto;
     }
     a.btn-navdaftar {
