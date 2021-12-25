@@ -21,6 +21,93 @@
       float: left;
   } */
 
+  /* dashboard user */
+.btn-sertifikat-groub{
+  width: 120px;
+height: 30px;
+
+background: #FFFFFF;
+/* Main Color */
+
+border: 1px solid #2CD5C4;
+box-sizing: border-box;
+border-radius: 20px;
+font-family: 'Ooredooheavy';
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: center;
+margin-right: 10px;
+margin-left: 10px;
+opacity: 0.3;
+}
+.btn-sertifikat-groub.active{
+  opacity: 1;
+  background-color: #2CD5C4;
+}
+
+  .dashboard-user{
+    width: 100px;
+height: 30px;
+
+background: #FFFFFF;
+/* Main Color */
+
+border: 1px solid #2CD5C4;
+box-sizing: border-box;
+border-radius: 20px;
+  }
+  /* form */
+  .title-right-daftar-titik{
+    font-family: 'Ooredooheavy';
+font-size: 144px;
+font-style: normal;
+font-weight: 900;
+line-height: 173px;
+letter-spacing: 0.005em;
+text-align: left;
+height: 120px;
+  }
+  .topnav.daftar{
+    position: absolute;
+    width: 100%;
+    box-shadow: none;
+  }
+  .right-daftar{
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+  }
+  .title-right-daftar{
+    font-family: 'Ooredooheavy';
+font-size: 60px;
+font-style: normal;
+font-weight: 900;
+line-height: 72px;
+letter-spacing: 0.005em;
+text-align: left;
+margin-bottom: 32px;
+  }
+  .title-daftar{
+    border-left: 5px solid #2CD5C4;  
+    font-family: 'Ooredooheavy';
+font-size: 36px;
+font-style: normal;
+font-weight: 900;
+line-height: 43px;
+letter-spacing: 0.005em;
+text-align: left;
+margin-bottom: 68px;
+  }
+  .title-daftar h1{
+    margin-left: 32px;
+  }
+  .bg-form-main{
+    background-color: #F3FDFC;
+  }
+
   /* details berita */
   .date-details-berita{
 font-size: 16px;
@@ -50,7 +137,7 @@ margin-bottom: 24px;
 }
 .img-details-berita{
   width: 100%;
-  margin-top: auto;
+  margin-top: -50%;
   margin-bottom: auto;
   position: relative;
 }
@@ -87,6 +174,10 @@ line-height: 16px;
 letter-spacing: 0.005em;
 text-align: left;
 margin-bottom: 50px;
+color: black;
+  }
+  .berita-list-title{
+color: black;
   }
 
   .background-ask-landing-layer1 {
@@ -301,6 +392,42 @@ right: -37px;
 button.collapsible.activecoll:after {
   content: url(assets/img/openarrow.svg);
 }
+/* hamburger dashboard user */
+.menu-toggle-userdashboard{
+  display: flex;
+  flex-direction: column;
+  height: 15px;
+  justify-content: space-between;
+    }
+  
+    .menu-toggle-userdashboard span{
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: black;
+        border-radius: 3px;
+        transition: all 0.5s;
+    }
+    .menu-toggle-userdashboard span:nth-child(1){
+      /* transform: rotate(45deg) translate(-1px, -1px); */
+      transform-origin: 0 0;
+  }
+  .menu-toggle-userdashboard span:nth-child(2){
+      transform: scale(0);
+  }
+  
+  /* hamburger animation*/
+  .menu-toggle-userdashboard.responsive span:nth-child(1){
+      transform: rotate(45deg) translate(-1px, -1px);
+      transform-origin: 0 0;
+  }
+  .menu-toggle-userdashboard.responsive span:nth-child(2){
+      transform: scale(0);
+  }
+  .menu-toggle-userdashboard.responsive span:nth-child(3){
+      transform: rotate(-45deg) translate(-2px, -1px);
+      transform-origin: 0 0;
+  }
   
   /* hamburger */
   .menu-toggle{
@@ -627,6 +754,12 @@ border-radius: 0px 30px 0px 50px;
     }
     .container-nav {
       max-width: 1300px !important;
+      margin: auto;
+      padding-right: 24px;
+    padding-left: 24px;
+    }
+    .container-nav-daftar {
+      max-width: 1520px !important;
       margin: auto;
       padding-right: 24px;
     padding-left: 24px;
