@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="assets/css/cssmain.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-tour.css" />
+  </head>
+  <body>
+    <div class="topnavdashboarduser" id="myTopnav">
+      <div class="container-main">
+        <a href="javascript:void(0);" onclick="openNav()">
+          <!-- <img src="assets/img/Menu-dashboard.svg" alt="" width=""> -->
+          <!-- <i id="navicon" class="fa fa-bars text-black"></i> -->
+          <div class="menu-toggle-userdashboard d-none d-lg-flex" style="margin-top: 4px;">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-toggle d-lg-none">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+        <a href="#home" class="logo font-weight-bold d-none d-lg-block">User Dashboard</a>
+        <!-- <a href="#home" class="active">Home</a>
+          <a href="#news">Why</a>
+          <a href="#contact">Ketentuan</a>
+          <a href="#about">Jadwal</a>
+          <a href="#about">Berita</a>
+          <a href="#about">FAQ</a>
+          <a href="#about">Bantuan</a> -->
+
+        <h5 class="d-lg-none title-page-main">User Dashboard</h5>
+
+        <hr id="navigasi" class="navigasi" />
+        <div class="d-lg-none">
+          <div class="text-center">
+            <div class="float-lg-right">
+              <a class="btn-navdaftar" href="#" role="button">Daftar</a>
+            </div>
+            <div class="float-lg-right mr-lg-2">
+              <a class="btn-navmasuk" href="#" role="button">Masuk</a>
+            </div>
+          </div>
+        </div>
+        <div class="d-none float-lg-right">
+          <a href="#" role="button"
+            ><i class="fa fa-user-circle pr-2"></i>Akli Hakiki Hasubuan</a
+          >
+        </div>
+        <div class="float-right d-none d-lg-block">
+          <a href="#" role="button"
+            >Kembali ke Home <img class="nav-icon-back" src="assets/img/icon-back.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="mySidenavuser" class="sidenavuser text-center">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <img class="my-5 rounded-circle img-avatar" src="assets/img/avatar.jpg" alt="">
+      <h5>Akli Hakiki Hasibuan</h5>
+      <p>aklihakikihasibuan@gmail.com</p>
+      <a href="#" class="btn btn-ms btn-outline-dark w-50 mx-auto">Dashboard</a>
+      <a href="#" class="btn btn-ms btn-outline-dark w-50 mx-auto mt-3">Detail Profile</a>
+      <a href="#" class="icon-keluar-sidenav"><img src="assets/img/icon-keluar-sidenav.svg" alt=""> Keluar</a>
+    </div>
+
+    <div id="shadowblur" class="shadowblur"></div>
+    
+
+    <div class="container-main">
+      <div class="py-74">
+        <div class="row">
+          <div class="col-lg-3">
+            <h3>Upload Sertifikat</h3>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <form>
+              <div class="input-group mt-5 input-game-main">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupFileAddon01">Choose File</span>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01"
+                    aria-describedby="inputGroupFileAddon01">
+                  <label class="custom-file-label" for="inputGroupFile01">tidak ada file yang di pilih</label>
+                 
+                </div>
+              </div>
+              <small class="form-text text-muted">
+                File harus format JPEG, PNG, & PDF dengan ukuran maksimal 10MB</small>
+              <button type="submit" class="btn btn-lg btn-dark w-100 mt-5">Simpan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/scripts-main.js"></script>
+    <script src="assets/js/bootstrap-tour.js"></script>
+  </body>
+</html>

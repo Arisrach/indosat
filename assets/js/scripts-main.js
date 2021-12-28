@@ -52,6 +52,7 @@
         document.getElementById("shadowblur").className = "shadowblur";
       }
 
+
       // bootstrap tour
 
       // Instance the tour

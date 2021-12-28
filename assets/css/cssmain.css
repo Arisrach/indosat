@@ -52,6 +52,71 @@ h4 ,h5 ,h6{
       float: left;
   } */
 
+  /* dashboard profile */
+  .input-game-main{
+    border-radius: 5px;
+    background: #F5F5F5;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    
+  }
+
+  label.custom-file-label {
+    /* padding: 20px 20px 40px 20px; */
+    box-sizing: border-box;
+    background-color: #ffffff00;
+    border: 0px;
+    padding:20px 20px;
+  }
+  span#inputGroupFileAddon01 {
+    background: #2CD5C4;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: "ooredoobold";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+    text-align: left;
+}
+
+  .custom-file-label::after {
+  content: '' !important;
+  padding: 0px;
+  border: 0px;
+}
+
+  .form-control-file, .form-control-range {
+    display: block;
+    width: 100%;
+    padding: 25px;
+    background: #F5F5F5;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+  .title-profile{
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 19px;
+letter-spacing: 0.005em;
+text-align: left;
+margin-bottom: 16px;
+font-family: 'Ooredoobold';
+  }
+  .isi-profile{
+font-size: 21px;
+font-style: normal;
+font-weight: 700;
+line-height: 25px;
+letter-spacing: 0.005em;
+text-align: left;
+margin-bottom: 48px;
+font-family: 'Ooredoobold';
+opacity: 0.6;
+  }
 
   /* dashboard user */
 
