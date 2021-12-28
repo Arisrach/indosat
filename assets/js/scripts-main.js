@@ -39,3 +39,38 @@
           }
         });
       }
+
+      function openNav() {
+        document.getElementById("mySidenavuser").style.width = "300px";
+        // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        document.getElementById("shadowblur").className += " responsive";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenavuser").style.width = "0";
+        // document.body.style.backgroundColor = "white";
+        document.getElementById("shadowblur").className = "shadowblur";
+      }
+
+      // bootstrap tour
+
+      // Instance the tour
+var tour = new Tour({
+  steps: [
+  {
+    element: "#my-element",
+    title: "Title of my step",
+    content: "Content of my step"
+  },
+  {
+    element: "#my-other-element",
+    title: "Title of my step",
+    content: "Content of my step"
+  }
+]});
+
+// Initialize the tour
+tour.init();
+
+// Start the tour
+tour.start();

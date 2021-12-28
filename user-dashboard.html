@@ -8,28 +8,28 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
-    />
-
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
     <title>Hello, world!</title>
-    <link rel="stylesheet" href="cssmain.css" />
+    <link rel="stylesheet" href="assets/css/cssmain.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-tour.css" />
   </head>
   <body>
-    <div class="topnav daftar" id="myTopnav">
-      <div class="container-nav-daftar">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <div class="topnavdashboarduser" id="myTopnav">
+      <div class="container-main">
+        <a href="javascript:void(0);" onclick="openNav()">
+          <!-- <img src="assets/img/Menu-dashboard.svg" alt="" width=""> -->
           <!-- <i id="navicon" class="fa fa-bars text-black"></i> -->
-          <div id="navicon" class="menu-toggle-userdashboard">
+          <div class="menu-toggle-userdashboard d-none d-lg-flex" style="margin-top: 4px;">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-toggle d-lg-none">
+            <span></span>
             <span></span>
             <span></span>
           </div>
         </a>
-        <a href="#home" class="logo font-weight-bold">Logo</a>
+        <a href="#home" class="logo font-weight-bold d-none d-lg-block">User Dashboard</a>
         <!-- <a href="#home" class="active">Home</a>
           <a href="#news">Why</a>
           <a href="#contact">Ketentuan</a>
@@ -37,6 +37,8 @@
           <a href="#about">Berita</a>
           <a href="#about">FAQ</a>
           <a href="#about">Bantuan</a> -->
+
+        <h5 class="d-lg-none title-page-main">User Dashboard</h5>
 
         <hr id="navigasi" class="navigasi" />
         <div class="d-lg-none">
@@ -54,18 +56,30 @@
             ><i class="fa fa-user-circle pr-2"></i>Akli Hakiki Hasubuan</a
           >
         </div>
-        <div class="float-right">
+        <div class="float-right d-none d-lg-block">
           <a href="#" role="button"
-            >Akli Hakiki Hasubuan <i class="fa fa-user-circle"></i
-          ></a>
+            >Kembali ke Home <img class="nav-icon-back" src="assets/img/icon-back.svg" alt=""></a>
         </div>
       </div>
     </div>
 
+    <div id="mySidenavuser" class="sidenavuser text-center">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <img class="my-5 rounded-circle img-avatar" src="assets/img/avatar.jpg" alt="">
+      <h5>Akli Hakiki Hasibuan</h5>
+      <p>aklihakikihasibuan@gmail.com</p>
+      <a href="#" class="btn btn-ms btn-outline-dark w-50 mx-auto">Dashboard</a>
+      <a href="#" class="btn btn-ms btn-outline-dark w-50 mx-auto mt-3">Detail Profile</a>
+      <a href="#" class="icon-keluar-sidenav"><img src="assets/img/icon-keluar-sidenav.svg" alt=""> Keluar</a>
+    </div>
+
+    <div id="shadowblur" class="shadowblur"></div>
+    
+
     <div class="container-main">
       <div class="row py-74">
-        <div class="col-lg-6">
-          <div class="card p-5">
+        <div class="col-lg-6 mb-4">
+          <div class="card p-5 h-100">
             <h3 class="text-danger">Biodata Belum Lengkap</h3>
             <p>
               Data kamu belum lengkap
@@ -74,12 +88,12 @@
               <br />
               rangkaian program training di 5G Digital Talent
             </p>
-            <a href="" class="btn btn-dark" style="width: 200px" role="button"
+            <a href="" class="btn btn-dark mt-auto" style="width: 200px" role="button"
               >Lengkapi Sekarang</a
             >
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 mb-4">
           <div class="card p-5 h-100">
             <h3>Upload Sertifikat Disini</h3>
             <p>
@@ -87,7 +101,7 @@
               <br />
               Upload sertifikat training mu sekarang !
             </p>
-            <a href="" class="btn btn-dark" style="width: 200px" role="button"
+            <a href="" class="btn btn-dark mt-auto" style="width: 200px" role="button"
               >Upload Sekarang</a
             >
           </div>
@@ -98,76 +112,102 @@
       </div>
       <div class="row py-74">
         <div class="col-lg-4">
-          <div class="card active p-5">
-            <h4>Tahap 1</h4>
-            <h3 class="mx-auto">Beginner</h3>
-            <div class="mx-auto bg-warning p-2">
-              <p class="m-0">Sekarang kamu ada disini</p>
+          <div class="card-tahapan active">
+            <div class="d-flex justify-content-between">
+              <!-- <h4>Tahap 1</h4>
+              <img src="assets/img/dotmilestone.svg" width="24" alt=""> -->
+              <div class="p-2 bd-highlight"><p>Tahap 1</p></div>
+              <div class="p-2 bd-highlight"><img src="assets/img/dotmilestone.svg" width="24" alt=""></div>
             </div>
+            <h4 class="mx-auto pt-2">Beginner</h4>
+              <p class="info-tahapan">Sekarang kamu ada disini</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-tahapan">
+            <div class="d-flex justify-content-between">
+              <!-- <h4>Tahap 1</h4>
+              <img src="assets/img/dotmilestone.svg" width="24" alt=""> -->
+              <div class="p-2 bd-highlight"><p>Tahap 2</p></div>
+              <div class="p-2 bd-highlight"><img src="assets/img/dotmilestone.svg" width="24" alt=""></div>
+            </div>
+            <h4 class="mx-auto pt-2">Intermediate</h4>
+            <p class="info-tahapan">Sekarang kamu ada disini</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-tahapan">
+            <div class="d-flex justify-content-between">
+              <!-- <h4>Tahap 1</h4>
+              <img src="assets/img/dotmilestone.svg" width="24" alt=""> -->
+              <div class="p-2 bd-highlight"><p>Tahap 3</p></div>
+              <div class="p-2 bd-highlight"><img src="assets/img/dotmilestone.svg" width="24" alt=""></div>
+            </div>
+            <h4 class="mx-auto pt-2">Specialization</h4>
+            <p class="info-tahapan">Sekarang kamu ada disini</p>
           </div>
         </div>
       </div>
       <div class="text-center">
           <h1>Sertifikat</h1>
       </div>
-      <div class="text-center  py-74">
-          <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn-sertifikat-groub active">Semua</button>
-              <button type="button" class="btn-sertifikat-groub">Beginner</button>
-              <button type="button" class="btn-sertifikat-groub">Intermediate</button>
-              <button type="button" class="btn-sertifikat-groub">Specialization</button>
-            </div>
+      <div class="text-center  py-24">
+        <div class="row justify-content-center .no-gutters">
+          <div class="col-6 col-lg-2 my-2">
+            <button type="button" class="btn-sertifikat-groub active">Semua</button>
+          </div>
+          <div class="col-6 col-lg-2 my-2">
+            <button type="button" class="btn-sertifikat-groub">Beginner</button>
+          </div>
+          <div class="col-6 col-lg-2 my-2">
+            <button type="button" class="btn-sertifikat-groub">Intermediate</button>
+          </div>
+          <div class="col-6 col-lg-2 my-2">
+            <button type="button" class="btn-sertifikat-groub">Specialization</button>
+          </div>
+        </div>
         </div>
         <div class="row py-74">
             <div class="col-lg-3">
                 <div class="card">
                     <img src="assets/img/certificate.jpg" alt="">
-                    <div class="card-nav">
+                    <div class="card-nav d-flex justify-content-end">
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <a role="button" class="btn btn-secondary">Left</a>
-                            <a role="button" class="btn btn-secondary">Middle</a>
-                            <a role="button" class="btn btn-secondary">Right</a>
+                            <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-secondary bg-transparent border-0"><img class="icon-certificate" src="assets/img/icon-zoomin.svg" alt=""></button>
+                            <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-secondary bg-transparent border-0"><img class="icon-certificate" src="assets/img/icon-zoomout.svg" alt=""></button>
+                            <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-secondary bg-transparent border-0"><img class="icon-certificate" src="assets/img/icon-download.svg" alt=""></button>
                           </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <div class="card">
-                    <img src="assets/img/certificate.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card">
-                    <img src="assets/img/certificate.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card">
-                    <img src="assets/img/certificate.jpg" alt="">
-                </div>
-            </div>
+            
         </div>
     </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div class="card border-0">
+          <img src="assets/img/certificate.jpg" alt="">
+          <div class="card-nav d-flex justify-content-end">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-secondary bg-transparent border-0"><img class="icon-certificate" src="assets/img/icon-zoomin.svg" alt=""></button>
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-secondary bg-transparent border-0"><img class="icon-certificate" src="assets/img/icon-zoomout.svg" alt=""></button>
+                  <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-secondary bg-transparent border-0"><img class="icon-certificate" src="assets/img/icon-download.svg" alt=""></button>
+                </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-      crossorigin="anonymous"
-    ></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-    -->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/scripts-main.js"></script>
+    <script src="assets/js/bootstrap-tour.js"></script>
   </body>
 </html>
