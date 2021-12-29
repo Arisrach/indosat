@@ -52,6 +52,71 @@ h4 ,h5 ,h6{
       float: left;
   } */
 
+/* form */
+.form-control-main{
+  background: #F3FDFC;
+border: 1px solid rgba(47, 48, 46, 0.3);
+box-sizing: border-box;
+border-radius: 5px;
+}
+
+.progressbar {
+  counter-reset: step;
+}
+.progressbar li {
+  list-style: none;
+  display: inline-block;
+  width: 30.33%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Ooredoobold';
+  font-size: 12px;
+}
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 32px;
+  height: 32px;
+  line-height : 30px;
+  border: 1px solid #2cd5c4;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: #fff;
+}
+.progressbar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index : -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: #000;
+}
+.progressbar li.active:before {
+  border-color: #2cd5c4;
+  background-color: #2cd5c4;
+} 
+.progressbar li.active + li:after {
+  background-color: #2cd5c4;
+}
+
+
+  /* daftar */
+  .bg-daftar {
+    background-color: #2cd5c4;
+    height: 100%;
+}
+
   /* dashboard profile */
   .input-game-main{
     border-radius: 5px;
@@ -279,6 +344,35 @@ box-sizing: border-box;
 border-radius: 20px;
   }
 
+  .sidenavuser.daftar a.logomobile {
+    position: absolute;
+    top: 0;
+}
+
+  .sidenavuser.daftar a.closebtn {
+    font-size: 27px;
+    border: 1px solid #c7c7c7;
+    padding: 0px 13px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+
+  .sidenavuser.daftar a{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    padding: 13px 32px;
+    color: #000;
+    font-family: 'OoredooBold';
+  }
+
+  .sidenavuser.daftar a.active{
+    font-family: 'OoredooBold';
+   background-color: #2cd5c456;
+  }
+
+
   .topnavdashboarduser{
     overflow: hidden;
     background-color: #ffff;
@@ -286,8 +380,17 @@ border-radius: 20px;
     border-bottom: 1px solid #000;
   }
   .topnavdashboarduser a.logo{
-    opacity: 0.3;
+    color: #818181;
   }
+
+  .topnavdashboarduser.daftar{
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    background: transparent;
+    border: #8a2be200;
+  }
+
   /* dashboarduser */
   .menu-toggle-userdashboard{
     display: flex;
@@ -442,9 +545,9 @@ margin-bottom: 24px;
 }
 .img-details-berita{
   width: 100%;
-  margin-top: -50%;
-  margin-bottom: auto;
-  position: relative;
+  object-fit: cover;
+  height: 500px;
+  border-radius: 20px;
 }
 /* pagination */
 li.page-item {
@@ -505,7 +608,7 @@ color: black;
   z-index: 999;
 }
   .bg-wind-landing{
-    background-image: url(assets/img/bg-wind.svg);
+    background-image: url(../img/bg-wind.svg);
     background-color: #fff;
     background-repeat: no-repeat;
     background-position-y: 70%;
@@ -567,7 +670,16 @@ color: black;
     z-index: 99;
     box-shadow: 2px 8px 35px 1px rgba(0, 0, 0, 0.1);
 }
-
+.img-berita-landing-fit{
+  max-height: 130px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.img-berita-list-fit{
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
 .ornament-why-landing-layer1 {
   border: 1px solid black;
   border-radius: 193px;
@@ -684,7 +796,7 @@ right: -37px;
   }
 
   button.collapsible:after {
-    content: url(assets/img/closearrow.svg);
+    content: url(../img/closearrow.svg);
     color: white;
     font-weight: bold;
     float: right;
@@ -695,7 +807,7 @@ right: -37px;
     height: 30px;
 }
 button.collapsible.activecoll:after {
-  content: url(assets/img/openarrow.svg);
+  content: url(../img/openarrow.svg);
 }
 /* hamburger dashboard user */
 
@@ -923,7 +1035,7 @@ justify-content: space-between;
     .iconmill.active{
       filter:none;
     }
-
+    
   }
   @media screen and (max-width: 768px) {
     .container-main {
@@ -1024,10 +1136,7 @@ border-radius: 0px 30px 0px 50px;
       align-content: center;
   }
   .img-details-berita {
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: auto;
-    position: relative;
+    height: 300px;
 }
   }
 
@@ -1078,7 +1187,7 @@ border-radius: 0px 30px 0px 50px;
       margin-bottom: 15px;
     }
     .topnav a.logo {
-      margin-right: 120px;
+      margin-right: 50px;
     }
     
   }
@@ -1103,7 +1212,14 @@ border-radius: 0px 30px 0px 50px;
         background-color: #ffff;
         padding-bottom: 0px !important;
       }
-      
+      .img-berita-landing-fit{
+        max-height: 300px;
+        object-fit: cover;
+      }
+      .img-berita-list-fit{
+        max-height: 300px;
+        object-fit: cover;
+      }
       a.btn-navdaftar {
         display: none;
       }

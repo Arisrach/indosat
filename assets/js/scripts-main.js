@@ -56,22 +56,32 @@
       // bootstrap tour
 
       // Instance the tour
-var tour = new Tour({
+var tour1 = new Tour({
   steps: [
+    {
+        element: "#e1",
+        // container: "body",
+        // title: "Title of my step",
+        content: "Data kamu belum lengkap, nih. Kamu <span class='font-weight-bold'>wajib</span> melengkapi data untuk dapat mengikuti seluruh rangkaian training di 5G Digital Talent",
+        template: "<div class='popover tour container-main text-center py-5'> <h3 class='popover-title'></h3> <div class='text-center my-3'><img src='assets/img/icon-peringatan.svg' width='50px'></div>  <div class='popover-content'></div>   <div class='popover-navigation'>     <button class='btn btn-default' data-role='next'>Kembali</button>       <button class='btn btn-dark' data-role='next'>Lengkapi Sekarang</button>   </div> </div>",
+    placement: "auto",
+  // backdropPadding: -24,
+        smartPlacement: true,
+      backdrop:true
+    },
   {
-    element: "#my-element",
-    title: "Title of my step",
-    content: "Content of my step"
+    element: "#e2",
+    // title: "Title of my step",
+    content: "Data kamu belum lengkap, nih. Kamu <span class='font-weight-bold'>wajib</span> melengkapi data untuk dapat mengikuti seluruh rangkaian training di 5G Digital Talent",
+    template: "<div class='popover tour'>   <div class='arrow'></div>   <h3 class='popover-title'></h3>   <div class='popover-content'></div>   <div class='popover-navigation'>     <button class='btn btn-default' data-role='prev'>« Prev</button>       <button class='btn btn-default' data-role='next'>Next »</button>     <button class='btn btn-default' data-role='end'>Skip</button>   </div> </div>",
+    placement: "bottom",
+    smartPlacement: true,
+    backdrop:true
   },
-  {
-    element: "#my-other-element",
-    title: "Title of my step",
-    content: "Content of my step"
-  }
+  // {
+  //   element: "#my-other-element",
+  //   title: "Title of my step",
+  //   content: "Content of my step"
+  // }
 ]});
 
-// Initialize the tour
-tour.init();
-
-// Start the tour
-tour.start();

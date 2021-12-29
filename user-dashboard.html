@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
     <title>Hello, world!</title>
     <link rel="stylesheet" href="assets/css/cssmain.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap-tour.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-tour-standalone.min.css" />
+    <script src="assets/js/jquery-tour.js"></script>
+    <script src="assets/js/bootstrap-tour-standalone.min.js"></script>
   </head>
   <body>
     <div class="topnavdashboarduser" id="myTopnav">
-      <div class="container-main">
+      <div class="container-main" >
         <a href="javascript:void(0);" onclick="openNav()">
           <!-- <img src="assets/img/Menu-dashboard.svg" alt="" width=""> -->
           <!-- <i id="navicon" class="fa fa-bars text-black"></i> -->
@@ -62,7 +64,7 @@
         </div>
       </div>
     </div>
-
+    
     <div id="mySidenavuser" class="sidenavuser text-center">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <img class="my-5 rounded-circle img-avatar" src="assets/img/avatar.jpg" alt="">
@@ -88,7 +90,7 @@
               <br />
               rangkaian program training di 5G Digital Talent
             </p>
-            <a href="" class="btn btn-dark mt-auto" style="width: 200px" role="button"
+            <a id="e2" href="" class="btn btn-dark mt-auto" style="width: 200px" role="button"
               >Lengkapi Sekarang</a
             >
           </div>
@@ -108,6 +110,7 @@
         </div>
       </div>
       <div class="text-center">
+        <br id="e1">
         <h1>Tahapan<span class="text-main"> Training</span></h1>
       </div>
       <div class="row py-74">
@@ -208,6 +211,10 @@
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/scripts-main.js"></script>
-    <script src="assets/js/bootstrap-tour.js"></script>
+    <script>// Initialize the tour
+      tour1.init();
+      
+      // Start the tour
+      tour1.start();</script>
   </body>
 </html>
