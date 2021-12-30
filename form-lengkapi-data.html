@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
     <title>Hello, world!</title>
     <link rel="stylesheet" href="assets/css/cssmain.css" />
+    <link rel="stylesheet" href="assets/css/droparea.css" />
     <!-- <link rel="stylesheet" href="assets/css/bootstrap-tour-standalone.min.css" />
     <script src="assets/js/jquery-tour.js"></script>
     <script src="assets/js/bootstrap-tour-standalone.min.js"></script> -->
@@ -80,11 +81,11 @@
 
     <div class="container-main">
 
-      <div class="text-center"><h4 class="text-danger mt-5">Data Kamu Belum Lengkap</h4></div>
-      <ul class="progressbar my-5">
-        <li class="active">Biodata 1</li>
-        <li>Biodata 2</li>
-        <li>Upload Foto</li>
+      <div class="text-center"><h4 class="text-danger my-5">Data Kamu Belum Lengkap</h4></div>
+      <ul class="progressbar d-lg-none">
+        <li id="barBiodata1" class="active">Biodata 1</li>
+        <li id="barBiodata2">Biodata 2</li>
+        <li id="barBiodata3">Upload Foto</li>
       </ul>
       <form>
       <div class="row justify-content-center">
@@ -113,9 +114,9 @@
               <label for="exampleInputPassword1" class="title-profile">Kota</label>
               <input type="text" class="form-control form-control-main" >
             </div>
-            <button class="btn btn-lg btn-dark w-100 my-5 font-weight-bold" id="biodata1">Selanjutnya</button>
+            <div class="btn btn-lg btn-dark w-100 my-5 font-weight-bold d-lg-none" id="biodata1">Selanjutnya</div>
         </div>
-        <div id="formBiodata2"  class="col-lg-4">
+        <div id="formBiodata2"  class="col-lg-4 d-none d-lg-block">
           <div class="form-group">
             <label for="exampleInputEmail1" class="title-profile">Universitas</label>
             <input type="text" class="form-control form-control-main" aria-describedby="emailHelp">
@@ -140,9 +141,17 @@
             <label for="exampleInputPassword1" class="title-profile">Konfirmasi Password</label>
             <input type="text" class="form-control form-control-main" >
           </div>
-          <button class="btn btn-lg btn-dark w-100 my-5 font-weight-bold" id="biodata2">Selanjutnya</button>
+          <div class="btn btn-lg btn-dark w-100 my-5 font-weight-bold  d-lg-none" id="biodata2">Selanjutnya</div>
         </div>
-        <div class="col-lg-6 text-center mx-auto">
+        <div id="formBiodata3"  class="col-lg-8 d-none d-lg-block">
+          <div class="droparea w-100" >
+            <img src="assets/img/upload-photo.svg" id="file-preview" >
+        </div>
+    
+        <input type="file" name="file" id="file" accept="image/*" style="display: none;" >
+          <!-- <div class="btn btn-lg btn-dark w-100 my-5 font-weight-bold  d-lg-none" id="biodata3">Selanjutnya</div> -->
+        </div>
+        <div id="submitbiodata" class="col-lg-6 text-center mx-auto d-none d-lg-block">
           <a class="btn btn-lg btn-dark w-100 my-5 font-weight-bold" href="#" role="button">Update</a>
         </div>
       </div>
@@ -155,6 +164,24 @@
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/scripts-main.js"></script>
+    <script src="assets/js/droparea.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+  $("#biodata1").click(function(){
+    $("#formBiodata1").addClass( "d-none d-lg-block" );
+    $("#barBiodata2").addClass('active');
+    $("#formBiodata2").removeClass( "d-none d-lg-block" );
+  });
+  $("#biodata2").click(function(){
+    $("#formBiodata2").addClass( "d-none d-lg-block" );
+    $("#barBiodata3").addClass('active');
+    $("#formBiodata3").removeClass( "d-none d-lg-block" );
+    $("#submitbiodata").removeClass( "d-none d-lg-block" );
+  });
+  $('.droparea').droparea();
+});
+    </script>
     
   </body>
 </html>

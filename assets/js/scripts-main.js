@@ -85,3 +85,12 @@ var tour1 = new Tour({
   // }
 ]});
 
+// $(document).ready(function(){
+//   $("#biodata1").click(function(){
+//     $("#formBiodata1").hide();
+//     $("#formBiodata2").show();
+//   });
+//   $("#show").click(function(){
+//     $("p").show();
+//   });
+// });
