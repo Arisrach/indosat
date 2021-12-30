@@ -81,7 +81,7 @@
 
     <div class="container-main">
 
-      <div class="text-center"><h4 class="text-danger my-5">Data Kamu Belum Lengkap</h4></div>
+      <div class="text-center"><h4 class="my-5">Upadate Profile Kamu</h4></div>
       <ul class="progressbar d-lg-none">
         <li id="barBiodata1" class="active">Biodata 1</li>
         <li id="barBiodata2">Biodata 2</li>
@@ -182,7 +182,8 @@
           <!-- <div class="btn btn-lg btn-dark w-100 my-5 font-weight-bold  d-lg-none" id="biodata3">Selanjutnya</div> -->
         </div>
         <div id="submitbiodata" class="col-lg-6 text-center mx-auto d-none d-lg-block">
-          <a class="btn btn-lg btn-dark w-100 my-5 font-weight-bold" href="#" role="button">Update</a>
+          <button class="btn btn-lg btn-dark w-100 my-5 font-weight-bold" type="submit">Button</button>
+          <!-- <a class="btn btn-lg btn-dark w-100 my-5 font-weight-bold" href="#" role="button">Simpan</a> -->
         </div>
       </div>
     </form>
@@ -212,21 +213,20 @@
   $('.droparea').droparea();
 });
     </script>
-
-<script src="assets/js/sweetalert2.js"></script>
-<script>
-  Swal.fire({
-    padding: '3em',
-title: 'Biodata Berhasil Di Simpan',
-// text: 'Modal with a custom image.',
-imageUrl: 'assets/img/icon-sukses.svg',
-imageWidth: 150,
-imageHeight: 150,
-imageAlt: 'Custom image',
-showConfirmButton: false,
-timer: 1500,
-})
-</script>
     
+    <script src="assets/js/sweetalert2.js"></script>
+    <script>
+      Swal.fire({
+        padding: '3em',
+  title: 'Biodata Berhasil Di Simpan',
+  // text: 'Modal with a custom image.',
+  imageUrl: 'assets/img/icon-sukses.svg',
+  imageWidth: 150,
+  imageHeight: 150,
+  imageAlt: 'Custom image',
+  showConfirmButton: false,
+  timer: 1500,
+})
+    </script>
   </body>
 </html>

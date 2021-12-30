@@ -53,6 +53,17 @@ h4 ,h5 ,h6{
   } */
 
 /* form */
+input[type=date].form-control::after{
+  content: url(../img/icon-kalender.svg);
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+  width: 15px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+}
 .form-control-main{
   background: #F3FDFC;
 border: 1px solid rgba(47, 48, 46, 0.3);
