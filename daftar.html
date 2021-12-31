@@ -103,7 +103,7 @@
                   <input type="password"  class="form-control bg-form-main" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
-                <button type="submit" class="btn btn-dark w-100 mt-4">Submit</button>
+                <button type="submit" class="btn btn-dark w-100 mt-4 btn-hitam">Submit</button>
                 <small id="emailHelp" class="form-text text-muted float-left">Sudah punya akun?</small><a href="#" class="float-left text-decoration-none text-dark font-weight-bold ml-3"><small>Masuk</small></a>
               
               </form>
@@ -125,5 +125,22 @@
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/scripts-main.js"></script>
+
+    <script src="assets/js/sweetalert2.js"></script>
+    <script>
+      Swal.fire({
+  imageUrl: 'assets/img/icon-email.svg',
+  imageWidth: 100,
+  imageHeight: 100,
+  html:
+    '<h3>Email verifikasi sudah terkirim Cek email Anda sekarang</h3><p>aklihakikihasibuan@gmail.com</p><br><small>Belum dapat link verifikasi? <a href="#" class="font-weight-bold text-dark">Kirim kembali</a></small>',
+    confirmButtonColor: '#2C2B31',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Kembali ke Home'
+}).then(function() {
+    window.location = "landing-page.html";
+});
+    </script>
+
   </body>
 </html>

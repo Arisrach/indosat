@@ -64,11 +64,65 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin: 0px;
   margin-top: 10px;
 }
+
+.btn-putih{
+  display: flex !important;
+    font-family: 'Ooredoobold';
+    font-style: normal;
+    font-weight: 900;
+    height: 62px !important;
+    max-width: 628px !important;
+    left: 0px !important;
+    top: 0px !important;
+    background: #FFFFFF !important;
+border: 1px solid #2F302E !important;
+box-sizing: border-box !important;
+border-radius: 5px !important;
+    color: black !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-hitam{
+  display: flex !important;
+    font-family: 'Ooredoobold';
+    font-style: normal;
+    font-weight: 900;
+    height: 62px !important;
+    max-width: 628px !important;
+    left: 0px !important;
+    top: 0px !important;
+    border-radius: 5px !important;
+    background: #2F302E !important;
+    border-radius: 5px !important;
+    color: white !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.is-salah{
+  background: rgba(237, 28, 36, 0.2) !important;
+/* Merah */
+
+border: 1.5px solid #ED1C24 !important;
+box-sizing: border-box !important;
+border-radius: 5px !important;
+}
 .form-control-main{
   background: #F3FDFC;
 border: 1px solid rgba(47, 48, 46, 0.3);
 box-sizing: border-box;
 border-radius: 5px;
+height: 62px;
+}
+.form-control-main:focus{
+  background: #F3FDFC !important;
+/* Main Color */
+
+border: 1.5px solid #2CD5C4 !important;
+box-sizing: border-box !important;
+border-radius: 5px !important;
+box-shadow: none !important;
 }
 
 .progressbar {
@@ -913,7 +967,7 @@ justify-content: space-between;
     display: block;
     color: #000;
     text-align: center;
-    padding: 26px 24px;
+    padding: 26px 20px;
     text-decoration: none;
     font-size: 17px;
     font-family: 'OoredooBold';
@@ -1198,8 +1252,9 @@ border-radius: 0px 30px 0px 50px;
       margin-bottom: 15px;
     }
     .topnav a.logo {
-      margin-right: 50px;
-    }
+      margin-right: 30px;
+      padding: 10px;
+  }
     
   }
   @media screen and (max-width:1230px) {
