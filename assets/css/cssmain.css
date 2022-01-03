@@ -66,7 +66,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .btn-putih{
-  display: flex !important;
+  /* display: flex !important; */
     font-family: 'Ooredoobold';
     font-style: normal;
     font-weight: 900;
@@ -79,12 +79,13 @@ border: 1px solid #2F302E !important;
 box-sizing: border-box !important;
 border-radius: 5px !important;
     color: black !important;
-    align-items: center;
-    justify-content: center;
+    padding-top: 15px;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 .btn-hitam{
-  display: flex !important;
+  /* display: flex !important; */
     font-family: 'Ooredoobold';
     font-style: normal;
     font-weight: 900;
@@ -96,8 +97,9 @@ border-radius: 5px !important;
     background: #2F302E !important;
     border-radius: 5px !important;
     color: white !important;
-    align-items: center;
-    justify-content: center;
+    padding-top: 15px;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 .is-salah{
