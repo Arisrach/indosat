@@ -56,14 +56,30 @@ h4 ,h5 ,h6{
 input[type=date].form-control::after{
   content: url(../img/icon-kalender.svg);
 }
+
+/* make the native arrow invisible and stretch it over the whole field so you can click anywhere in the input field to trigger the native datepicker*/
 input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
-  width: 15px;
-  padding: 0px;
-  margin: 0px;
-  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
 }
+
+/* adjust increase/decrease button */
+input[type="date"]::-webkit-inner-spin-button {
+  z-index: 1;
+}
+
+.form-control[type=date]::-webkit-inner-spin-button, 
+.form-control[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}   
 
 .btn-putih{
   /* display: flex !important; */
