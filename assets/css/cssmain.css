@@ -56,7 +56,9 @@ h4 ,h5 ,h6{
 input[type=date].form-control::after{
   content: url(../img/icon-kalender.svg);
 }
-
+.bg-light{
+  background-color: #FFFFFF !important;
+}
 /* make the native arrow invisible and stretch it over the whole field so you can click anywhere in the input field to trigger the native datepicker*/
 input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
