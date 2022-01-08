@@ -697,14 +697,14 @@ color: black;
 
   .background-ask-landing-layer1 {
     position: absolute;
-    bottom: 0px;
+    top: 286px;
     left: 15px;
     z-index: 99;
     width: 96%;
-}
+  }
   .background-ask-landing-layer2 {
     position: absolute;
-    bottom: -10%;
+    top: 0px;
     left: -100px;
     z-index: 99;
     width: 630px;
