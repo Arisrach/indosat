@@ -107,7 +107,7 @@ button.btn.dropdown-toggle.btn-light {
     font-style: normal;
     font-weight: 900;
     height: 62px !important;
-    max-width: 628px !important;
+    max-width: 628px;
     left: 0px !important;
     top: 0px !important;
     background: #FFFFFF !important;
@@ -126,7 +126,7 @@ border-radius: 5px !important;
     font-style: normal;
     font-weight: 900;
     height: 62px !important;
-    max-width: 628px !important;
+    max-width: 628px;
     left: 0px !important;
     top: 0px !important;
     border-radius: 5px !important;
@@ -484,7 +484,9 @@ border-radius: 20px;
   .topnavdashboarduser a.logo{
     color: #818181;
   }
-
+  .topnavdashboarduser a.logo:hover{
+    background-color: #81818100 !important;
+  }
   .topnavdashboarduser.daftar{
     position: absolute;
     width: 100%;
