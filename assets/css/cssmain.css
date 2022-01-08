@@ -290,6 +290,9 @@ opacity: 0.6;
   .img-avatar{
     border: 2px solid white;
     outline: 2px solid black;
+    object-fit: cover;
+    width: 140px;
+    height: 140px;
   }
   .sidenavuser .icon-keluar-sidenav {
     position: absolute;
