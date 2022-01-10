@@ -777,8 +777,14 @@ color: black;
     z-index: 99;
     box-shadow: 2px 8px 35px 1px rgba(0, 0, 0, 0.1);
 }
+.img-berita-landing-big-fit{
+  height: 490px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 .img-berita-landing-fit{
-  max-height: 130px;
+  height: 130px;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -1176,6 +1182,17 @@ justify-content: space-between;
   }
 .topnav.daftar {
     border-bottom: 0px;
+}
+.img-berita-landing-big-fit{
+  height: 275px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.img-berita-landing-fit{
+  height: 275px;
+  object-fit: cover;
+  border-radius: 20px;
 }
   }
 
