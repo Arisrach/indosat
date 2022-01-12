@@ -53,6 +53,23 @@ h4 ,h5 ,h6{
   } */
 
 /* form */
+
+.label.custom-file-label {
+  height: 100% !important;
+}
+.input-group-prepend {
+  margin-right: -1px;
+  position: relative;
+  z-index: 1;
+}
+.custom-file{
+  /* background-color: beige !important; */
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute !important;
+    z-index: 99 !important;
+    text-align: center;
+}
 input[type=date].form-control::after{
   content: url(../img/icon-kalender.svg);
 }
