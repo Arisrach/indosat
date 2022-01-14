@@ -307,6 +307,23 @@ opacity: 0.6;
 
   /* dashboard user */
 
+  .btn-dashboard-user{
+    padding: 18px 57px !important;
+    width: 200px;
+    height: 55px;
+    /* display: flex !important; */
+    border: 1px solid black !important;
+    color: black !important;
+    font-family: 'Ooredoobold';
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+  }
+  .btn-dashboard-user:hover{
+    color: white !important;
+  }
+
   .img-avatar{
     border: 2px solid white;
     outline: 2px solid black;
@@ -715,6 +732,26 @@ color: black;
 color: black;
   }
 
+  .title-slider-landing{
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  .discription-title-slider-landing{
+    line-height: 25px;
+letter-spacing: 0.005em;
+margin-bottom: 32px;
+  }
+  .title-why-landing{
+    margin-bottom: 16px;
+  }
+  .discription-title-why-landing{
+    line-height: 25px;
+letter-spacing: 0.005em;
+margin-bottom: 32px;
+  }
+  .mb-64{
+    margin-bottom: 64px;
+  }
   .background-ask-landing-layer1 {
     position: absolute;
     top: 286px;
