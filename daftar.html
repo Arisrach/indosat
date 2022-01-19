@@ -95,13 +95,21 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Password*</label>
-                  <input type="password" class="form-control form-control-main" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                  <div class="input-group" id="show_hide_password">
+                    <input class="form-control form-control-main" type="password">
+                    <div class="input-group-addon">
+                      <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Konfirmasi Password*</label>
-                  <input type="password"  class="form-control form-control-main" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                  <div class="input-group" id="show_hide_password_confir">
+                    <input class="form-control form-control-main" type="password">
+                    <div class="input-group-addon">
+                      <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
                 </div>
                 <button type="submit" class="btn btn-dark w-100 mt-4 btn-hitam mw-100">Submit</button>
                 <small id="emailHelp" class="form-text text-muted float-left">Sudah punya akun?</small><a href="#" class="float-left text-decoration-none text-dark font-weight-bold ml-3"><bold>Masuk</bold></a>
@@ -127,7 +135,8 @@
     <script src="assets/js/scripts-main.js"></script>
 
     <script src="assets/js/sweetalert2.js"></script>
-    <script>
+    <script src="assets/js/icon.js"></script>
+    <!-- <script>
       Swal.fire({
   imageUrl: 'assets/img/icon-email.svg',
   imageWidth: 100,
@@ -140,7 +149,36 @@
 }).then(function() {
     window.location = "landing-page.html";
 });
+    </script> -->
+    <script>
+      $(document).ready(function() {
+    $("#show_hide_password a").on('click', function(event) {
+        event.preventDefault();
+        if($('#show_hide_password input').attr("type") == "text"){
+            $('#show_hide_password input').attr('type', 'password');
+            $('#show_hide_password i').addClass( "fa-eye-slash" );
+            $('#show_hide_password i').removeClass( "fa-eye" );
+        }else if($('#show_hide_password input').attr("type") == "password"){
+            $('#show_hide_password input').attr('type', 'text');
+            $('#show_hide_password i').removeClass( "fa-eye-slash" );
+            $('#show_hide_password i').addClass( "fa-eye" );
+        }
+    });
+    $("#show_hide_password_confir a").on('click', function(event) {
+        event.preventDefault();
+        if($('#show_hide_password_confir input').attr("type") == "text"){
+            $('#show_hide_password_confir input').attr('type', 'password');
+            $('#show_hide_password_confir i').addClass( "fa-eye-slash" );
+            $('#show_hide_password_confir i').removeClass( "fa-eye" );
+        }else if($('#show_hide_password_confir input').attr("type") == "password"){
+            $('#show_hide_password_confir input').attr('type', 'text');
+            $('#show_hide_password_confir i').removeClass( "fa-eye-slash" );
+            $('#show_hide_password_confir i').addClass( "fa-eye" );
+        }
+    });
+});
     </script>
+    
 
   </body>
 </html>
