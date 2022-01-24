@@ -52,6 +52,14 @@ h4 ,h5 ,h6{
       float: left;
   } */
 
+  .scrolltoTop{
+    float: right;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 9999;
+  }
+
 /* form */
 html {
   scroll-behavior: smooth;
